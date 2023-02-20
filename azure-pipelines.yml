@@ -11,7 +11,7 @@ variables:
   azureServiceConnectionId: '2c21390c-2993-481b-b9d5-b1f2359b04a5'
 
   # Web app name
-  webAppName: ''
+  webAppName: 'pythinwesite123'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -80,7 +80,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : pythinwesite123'
+            displayName: 'Deploy Azure Web App : '
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
